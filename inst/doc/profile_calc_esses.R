@@ -32,7 +32,7 @@ rownames(df_esses) <- names(estimates)
 knitr::kable(df_esses)
 
 ## ------------------------------------------------------------------------
-rprof_tmp_output <- "~/tmp_tracerer_rprof"
+rprof_tmp_output <- tempfile()
 Rprof(rprof_tmp_output)
 
 for (i in 1:1) {

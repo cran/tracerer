@@ -1,12 +1,12 @@
 Package: tracerer
 Type: Package
 Title: Tracer from R
-Version: 1.5.1
+Version: 2.0.1
 Authors@R: c(
-  person("Richel J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
-  person("Joelle", "Barido-Sottani", role = "rev", comment = "Joelle reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
+  person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
+  person("Joëlle", "Barido-Sottani", role = "rev", comment = "Joëlle reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
   person("David", "Winter", role = "rev", comment = "David reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"))
-Maintainer: Richel J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
 Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
   Bayesian phylogenetic tool, that uses DNA/RNA/protein data
   and many model priors to create a posterior of jointly estimated 
@@ -20,21 +20,21 @@ License: GPL-3 | file LICENSE
 LazyData: TRUE
 Imports: jsonlite, Rcpp, testit
 Suggests: ape, geiger, ggplot2, hunspell, knitr, phangorn, rbenchmark,
-        reshape2, rmarkdown, spelling, testthat
+        reshape2, rmarkdown, spelling, stringr, testthat
 VignetteBuilder: knitr
-RoxygenNote: 6.1.0
-URL: https://github.com/richelbilderbeek/tracerer
-BugReports: https://github.com/richelbilderbeek/tracerer
+RoxygenNote: 6.1.1
+URL: https://github.com/ropensci/tracerer
+BugReports: https://github.com/ropensci/tracerer
 LinkingTo: Rcpp
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2018-10-29 08:20:43 UTC; plaintext
-Author: Richel J.C. Bilderbeek [aut, cre]
+Packaged: 2019-03-01 08:19:38 UTC; richel
+Author: Richèl J.C. Bilderbeek [aut, cre]
     (<https://orcid.org/0000-0003-1107-7049>),
-  Joelle Barido-Sottani [rev] (Joelle reviewed the package for rOpenSci,
+  Joëlle Barido-Sottani [rev] (Joëlle reviewed the package for rOpenSci,
     see https://github.com/ropensci/onboarding/issues/209),
   David Winter [rev] (David reviewed the package for rOpenSci, see
     https://github.com/ropensci/onboarding/issues/209)
 Repository: CRAN
-Date/Publication: 2018-10-30 16:30:05 UTC
+Date/Publication: 2019-03-01 14:10:04 UTC

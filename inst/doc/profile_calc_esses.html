@@ -425,7 +425,7 @@ knitr::kable(df_esses)
 
 <p>Measuring run-time speed:</p>
 
-<pre><code class="r">rprof_tmp_output &lt;- &quot;~/tmp_tracerer_rprof&quot;
+<pre><code class="r">rprof_tmp_output &lt;- tempfile()
 Rprof(rprof_tmp_output)
 
 for (i in 1:1) {

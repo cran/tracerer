@@ -22,7 +22,7 @@
 #'   expected <- c(10, 10, 10, 10, 7, 10, 9, 6)
 #'   testit::assert(all(esses == expected))
 #' @export
-#' @author Richel J.C. Bilderbeek
+#' @author Richèl J.C. Bilderbeek
 calc_esses <- function(
   traces,
   sample_interval
@@ -55,7 +55,7 @@ calc_esses <- function(
   testit::assert(names(df) == names(traces))
 
   # Round off values to nearest integers
-  df[1, ] <- as.integer(df[1, ] + 0.5)
+  df[1, ] <- as.integer(as.numeric(df[1, ]) + 0.5)
 
   df
 }
