@@ -1,7 +1,7 @@
 Package: tracerer
 Type: Package
 Title: Tracer from R
-Version: 2.0.1
+Version: 2.0.2
 Authors@R: c(
   person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
   person("Joëlle", "Barido-Sottani", role = "rev", comment = "Joëlle reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
@@ -16,11 +16,11 @@ Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
   This package provides a way to parse and analyze 'BEAST2' input
   files without active user input, but using
   R function calls instead.
-License: GPL-3 | file LICENSE
+License: GPL-3
 LazyData: TRUE
 Imports: jsonlite, Rcpp, testit
 Suggests: ape, geiger, ggplot2, hunspell, knitr, phangorn, rbenchmark,
-        reshape2, rmarkdown, spelling, stringr, testthat
+        reshape2, rmarkdown, spelling, stringr, testthat (>= 2.1.0)
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
 URL: https://github.com/ropensci/tracerer
@@ -29,7 +29,7 @@ LinkingTo: Rcpp
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2019-03-01 08:19:38 UTC; richel
+Packaged: 2019-12-02 10:57:10 UTC; richel
 Author: Richèl J.C. Bilderbeek [aut, cre]
     (<https://orcid.org/0000-0003-1107-7049>),
   Joëlle Barido-Sottani [rev] (Joëlle reviewed the package for rOpenSci,
@@ -37,4 +37,4 @@ Author: Richèl J.C. Bilderbeek [aut, cre]
   David Winter [rev] (David reviewed the package for rOpenSci, see
     https://github.com/ropensci/onboarding/issues/209)
 Repository: CRAN
-Date/Publication: 2019-03-01 14:10:04 UTC
+Date/Publication: 2019-12-02 12:10:02 UTC
