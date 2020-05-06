@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="author" content="Richèl J.C. Bilderbeek" />
 
-<meta name="date" content="2019-12-02" />
+<meta name="date" content="2020-05-06" />
 
 <title>tracerer demo</title>
 
@@ -118,9 +117,6 @@ padding-right: 2em;
 font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 1.35;
-}
-#header {
-text-align: center;
 }
 #TOC {
 clear: both;
@@ -289,7 +285,8 @@ code > span.st { color: #d14; }
 code > span.co { color: #888888; font-style: italic; } 
 code > span.ot { color: #007020; } 
 code > span.al { color: #ff0000; font-weight: bold; } 
-code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
 </style>
 
 
@@ -304,7 +301,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">tracerer demo</h1>
 <h4 class="author">Richèl J.C. Bilderbeek</h4>
-<h4 class="date">2019-12-02</h4>
+<h4 class="date">2020-05-06</h4>
 
 
 
@@ -402,26 +399,30 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="left">2.827876</td>
 </tr>
 <tr class="odd">
+<td>median</td>
+<td align="left">-69.87976</td>
+</tr>
+<tr class="even">
 <td>mode</td>
 <td align="left">n/a</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>geom_mean</td>
 <td align="left">n/a</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>hpd_interval_low</td>
 <td align="left">-74.15268</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>hpd_interval_high</td>
 <td align="left">-68.68523</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>act</td>
 <td align="left">1000</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>ess</td>
 <td align="left">10</td>
 </tr>
@@ -441,6 +442,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <th align="right">stderr_mean</th>
 <th align="right">stdev</th>
 <th align="right">variance</th>
+<th align="right">median</th>
 <th align="left">mode</th>
 <th align="left">geom_mean</th>
 <th align="right">hpd_interval_low</th>
@@ -456,6 +458,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.5044887</td>
 <td align="right">1.6816291</td>
 <td align="right">2.8278764</td>
+<td align="right">-69.8797613</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
 <td align="right">-74.1526820</td>
@@ -469,6 +472,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.3964208</td>
 <td align="right">1.3214025</td>
 <td align="right">1.7461047</td>
+<td align="right">-60.0504225</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
 <td align="right">-62.4090389</td>
@@ -482,6 +486,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.5424505</td>
 <td align="right">1.8081684</td>
 <td align="right">3.2694729</td>
+<td align="right">-10.5950270</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
 <td align="right">-14.1703653</td>
@@ -495,6 +500,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.3964208</td>
 <td align="right">1.3214025</td>
 <td align="right">1.7461047</td>
+<td align="right">-60.0504225</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
 <td align="right">-62.4090389</td>
@@ -508,6 +514,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.1439937</td>
 <td align="right">0.3916244</td>
 <td align="right">0.1533697</td>
+<td align="right">0.8755907</td>
 <td align="left">n/a</td>
 <td align="left">0.91041547166058</td>
 <td align="right">0.4529637</td>
@@ -521,6 +528,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.5424505</td>
 <td align="right">1.8081684</td>
 <td align="right">3.2694729</td>
+<td align="right">-3.6872718</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
 <td align="right">-7.2626100</td>
@@ -534,6 +542,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.2134411</td>
 <td align="right">0.6713951</td>
 <td align="right">0.4507714</td>
+<td align="right">1.4118781</td>
 <td align="left">n/a</td>
 <td align="left">1.28823302868404</td>
 <td align="right">0.3909076</td>
@@ -547,6 +556,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td align="right">0.0650235</td>
 <td align="right">0.1709096</td>
 <td align="right">0.0292101</td>
+<td align="right">0.4480670</td>
 <td align="left">n/a</td>
 <td align="left">0.466468860930895</td>
 <td align="right">0.2496224</td>
