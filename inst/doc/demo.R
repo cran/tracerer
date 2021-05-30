@@ -8,10 +8,10 @@ knitr::opts_chunk$set(
 library(tracerer)
 
 ## -----------------------------------------------------------------------------
-estimates <- parse_beast_log(
+estimates <- parse_beast_tracelog_file(
   get_tracerer_path("beast2_example_output.log")
 )
-estimates <- remove_burn_ins(estimates, burn_in_fraction = 0.1) 
+estimates <- remove_burn_ins(estimates, burn_in_fraction = 0.1)
 esses <- calc_esses(estimates, sample_interval = 1000)
 table <- t(esses)
 colnames(table) <- c("ESS")
@@ -19,7 +19,7 @@ knitr::kable(table)
 
 ## -----------------------------------------------------------------------------
 sum_stats <- calc_summary_stats(
-  estimates$posterior, 
+  estimates$posterior,
   sample_interval = 1000
 )
 table <- t(sum_stats)
@@ -28,7 +28,7 @@ knitr::kable(table)
 
 ## -----------------------------------------------------------------------------
 sum_stats <- calc_summary_stats(
-  estimates, 
+  estimates,
   sample_interval = 1000
 )
 knitr::kable(sum_stats)
@@ -36,14 +36,15 @@ knitr::kable(sum_stats)
 ## -----------------------------------------------------------------------------
 ggplot2::ggplot(
   data = remove_burn_ins(estimates, burn_in_fraction = 0.1),
-  ggplot2::aes(posterior) 
-) + ggplot2::geom_histogram(binwidth = 0.21) + ggplot2::scale_x_continuous(breaks = seq(-75,-68))
+  ggplot2::aes(posterior)
+) + ggplot2::geom_histogram(binwidth = 0.21) +
+  ggplot2::scale_x_continuous(breaks = seq(-75, -68))
 
 
 ## -----------------------------------------------------------------------------
 ggplot2::ggplot(
   data = remove_burn_ins(estimates, burn_in_fraction = 0.1),
-  ggplot2::aes(x = Sample) 
+  ggplot2::aes(x = Sample)
 ) + ggplot2::geom_line(ggplot2::aes(y = posterior))
 
 

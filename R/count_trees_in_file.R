@@ -15,13 +15,13 @@ count_trees_in_file <- function(
       "File '", trees_filename, "' not found"
     )
   }
-  if (!is_trees_file(trees_filename = trees_filename)) {
+  if (!tracerer::is_trees_file(trees_filename = trees_filename)) {
     stop(
       "'trees_filename' invalid"
     )
   }
   sum(stringr::str_count(
-    string = readLines(trees_filename ,warn = FALSE),
+    string = readLines(trees_filename, warn = FALSE),
     pattern = "(^tree STATE_)|(\tTREE \\* UNTITLED = \\[&R\\] \\()")
   )
 }

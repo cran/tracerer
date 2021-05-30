@@ -2,6 +2,7 @@ Anthus
 AppVeyor
 BEAUti
 Bouckaert
+CMD
 codecov
 Codecov
 DensiTree
@@ -31,11 +32,15 @@ Richèl
 rmarkdown
 ropensci
 rOpenSci
+screenlog
+tempfile
+tracelog
+treelog
 unparsed
 uk
+undeleted
 VignetteEncoding
 VignetteEngine
 VignetteIndexEntry
 www
 Zhang
-

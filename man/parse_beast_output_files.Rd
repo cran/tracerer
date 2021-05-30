@@ -7,12 +7,15 @@
 parse_beast_output_files(log_filename, trees_filenames, state_filename)
 }
 \arguments{
-\item{log_filename}{name of the BEAST2 .log file}
+\item{log_filename}{deprecated name
+of the BEAST2 tracelog \code{.log} output file.
+Use \code{tracelog_filename} instead}
 
-\item{trees_filenames}{name(s) of the BEAST2 .trees file(s) created.
-BEAST2 will create one .trees file per alignment}
+\item{trees_filenames}{the names of one or more a BEAST2
+posterior \code{.trees} file.
+Each \code{.trees} file can be read using \link{parse_beast_trees}}
 
-\item{state_filename}{name of the BEAST2 .xml.state file created}
+\item{state_filename}{name of the BEAST2 state \code{.xml.state} output file}
 }
 \value{
 a list with the following elements:\cr
@@ -32,17 +35,14 @@ a list with the following elements:\cr
 Parse all BEAST2 output files
 }
 \examples{
-  trees_filenames <- get_tracerer_path("beast2_example_output.trees")
-  log_filename <- get_tracerer_path("beast2_example_output.log")
-  state_filename <- get_tracerer_path("beast2_example_output.xml.state")
-  out <- parse_beast_output_files(
-    log_filename = log_filename,
-    trees_filenames = trees_filenames,
-    state_filename = state_filename
-  )
-  testit::assert("estimates" \%in\% names(out))
-  testit::assert("beast2_example_output_trees" \%in\% names(out))
-  testit::assert("operators" \%in\% names(out))
+trees_filenames <- get_tracerer_path("beast2_example_output.trees")
+log_filename <- get_tracerer_path("beast2_example_output.log")
+state_filename <- get_tracerer_path("beast2_example_output.xml.state")
+parse_beast_output_files(
+  log_filename = log_filename,
+  trees_filenames = trees_filenames,
+  state_filename = state_filename
+)
 }
 \seealso{
 Use \code{\link{remove_burn_ins}} to remove the burn-in from

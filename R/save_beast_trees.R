@@ -13,7 +13,7 @@ save_beast_trees <- function(
 ) {
   if (class(trees) != "multiPhylo") {
     stop(
-      "'trees' must be of class 'multiPhylo' instead of '", class(trees) , "'"
+      "'trees' must be of class 'multiPhylo' instead of '", class(trees), "'"
     )
   }
   if (!is.character(filename) || stringr::str_length(filename) == 0) {
@@ -21,5 +21,5 @@ save_beast_trees <- function(
   }
   ape::write.nexus(phy = trees, file = filename)
 
-  testit::assert(is_trees_file(filename))
+  testit::assert(tracerer::is_trees_file(filename))
 }
