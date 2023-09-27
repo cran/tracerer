@@ -1,7 +1,7 @@
 Package: tracerer
 Type: Package
 Title: Tracer from R
-Version: 2.2.2
+Version: 2.2.3
 Authors@R: c(
   person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
   person("Joëlle", "Barido-Sottani", role = "rev", comment = "Joëlle reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
@@ -22,7 +22,7 @@ Suggests: ape, ggplot2, hunspell, knitr, markdown, phangorn, rappdirs,
         rbenchmark, reshape2, rmarkdown, spelling, stringr, testthat
         (>= 2.1.0)
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 URL: https://docs.ropensci.org/tracerer/ (website)
         https://github.com/ropensci/tracerer/
 BugReports: https://github.com/ropensci/tracerer/issues
@@ -30,7 +30,7 @@ LinkingTo: Rcpp
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2021-05-30 09:12:46 UTC; richel
+Packaged: 2023-09-25 16:51:05 UTC; richel
 Author: Richèl J.C. Bilderbeek [aut, cre]
     (<https://orcid.org/0000-0003-1107-7049>),
   Joëlle Barido-Sottani [rev] (Joëlle reviewed the package for rOpenSci,
@@ -38,4 +38,4 @@ Author: Richèl J.C. Bilderbeek [aut, cre]
   David Winter [rev] (David reviewed the package for rOpenSci, see
     https://github.com/ropensci/onboarding/issues/209)
 Repository: CRAN
-Date/Publication: 2021-05-30 09:40:03 UTC
+Date/Publication: 2023-09-27 11:30:02 UTC
